@@ -9,6 +9,8 @@ import java.time.LocalDateTime;
 public class User {
     private Long id;
     private String account;
+    private String username;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
     private String email;
     private LocalDateTime created;

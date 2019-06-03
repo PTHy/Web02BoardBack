@@ -2,7 +2,6 @@ package kr.hs.dgsw.board_back.Service;
 
 import kr.hs.dgsw.board_back.Domain.Post;
 import kr.hs.dgsw.board_back.Domain.PostMapper;
-import org.omg.PortableServer.POA;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +24,7 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
-    public List<Post> findByUserId(Long userId) {
+    public List<HashMap> findByUserId(Long userId) {
         return postMapper.findByUserId(userId);
     }
 

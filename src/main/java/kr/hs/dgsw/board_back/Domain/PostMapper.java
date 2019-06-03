@@ -10,7 +10,7 @@ import java.util.List;
 public interface PostMapper {
     List<Post> findAll();
     int deleteById(@Param("id") Long id);
-    List<Post> findByUserId(@Param("userId") Long userId);
+    List<HashMap> findByUserId(@Param("userId") Long userId);
     Long add(Post post);
     int modify(Post post);
     Post findById(@Param("id") Long id);
