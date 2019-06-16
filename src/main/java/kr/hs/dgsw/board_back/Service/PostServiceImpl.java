@@ -14,7 +14,7 @@ public class PostServiceImpl implements PostService{
     PostMapper postMapper;
 
     @Override
-    public List<Post> findAll() {
+    public List<HashMap>  findAll() {
         return postMapper.findAll();
     }
 

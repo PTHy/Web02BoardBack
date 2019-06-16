@@ -11,6 +11,7 @@ public interface UserMapper {
     @Delete("delete from user where id = #{id}")
     int deleteById(@Param("id") Long id);
     Long add(User user);
+    User login(User user);
     int modify(User user);
     User findById(@Param("id") Long id);
 }

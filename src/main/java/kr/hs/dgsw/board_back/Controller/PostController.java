@@ -19,7 +19,7 @@ public class PostController {
      */
 
     @GetMapping(value = "/api/posts")
-    public List posts() {
+    public List<HashMap> posts() {
         return this.postService.findAll();
     }
 

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public interface PostService {
-    List<Post> findAll();
+    List<HashMap> findAll();
     int deleteById(Long id);
     List<HashMap> findByUserId(Long userId);
     Long add(Post post);

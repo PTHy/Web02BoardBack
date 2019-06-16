@@ -10,6 +10,7 @@ import java.util.List;
 public interface UserService {
     List<User> findAll();
     int deleteById(Long id);
+    User login(User user);
     Long add(User user);
     int modify(User user);
     User findById(Long id);

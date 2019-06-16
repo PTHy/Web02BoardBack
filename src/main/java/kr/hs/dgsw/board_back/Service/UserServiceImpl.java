@@ -24,6 +24,12 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
+    public User login(User user) {
+        System.out.println(user.toString());
+        return userMapper.login(user);
+    }
+
+    @Override
     public Long add(User user) {
         return userMapper.add(user);
     }

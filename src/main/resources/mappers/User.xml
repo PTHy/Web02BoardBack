@@ -12,6 +12,13 @@
         </selectKey>
     </insert>
 
+    <select id="login" parameterType="kr.hs.dgsw.board_back.Domain.User" resultType="kr.hs.dgsw.board_back.Domain.User">
+        select id, account, username, email
+        from user
+        where account LIKE #{account}
+        and password LIKE #{password}
+    </select>
+
     <update id="modify" parameterType="kr.hs.dgsw.board_back.Domain.User">
         update user set account=#{account}, password=#{password}, username=#{username}, email=#{email}
         where id=#{id}
